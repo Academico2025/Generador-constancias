@@ -143,7 +143,7 @@
 
             lines.forEach((line, index) => {
                 const [name, hours, project, identity_document] = line.split(',').map(item => item.trim());
-                if (name && hours && project && identity_document) {
+                if (name && time && project && identity_document) {
                     const certDiv = document.createElement('div');
                     certDiv.className = 'certificate';
                     certDiv.id = `cert-${index}`;
@@ -160,7 +160,7 @@
                         <h3>${name}</h3>
                         <p>con Documento de Identidad: ${identity_document}</p>
                         <p>ha completado exitosamente</p>
-                        <p><strong>${hours}</strong> horas de trabajo en</p>
+                        <p><strong>${time}</strong> horas de trabajo en</p>
                         <p><strong>${project}</strong></p>
                         <p>Fecha: 19 de abril de 2025</p>
                         <svg id="barcode-${index}"></svg>
