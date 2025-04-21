@@ -110,7 +110,7 @@
     <input type="file" id="logoInput" accept="image/*"><br><br>
 
     <p>Ingrese los datos en el formato: nombre,horas,proyecto,documento_identidad (una entrada por línea)</p>
-    <textarea id="inputData" placeholder="Ejemplo: Juan Pérez,10,Proyecto X,12345678\nMaría Gómez,15,Proyecto Y,87654321"></textarea>
+    <textarea id="inputData" placeholder="Ejemplo: Juan Pérez,10,Proyecto X,12345678\María Gómez,15,Proyecto Y,87654321"></textarea>
     <br>
     <button onclick="generateCertificates()">Generar Constancias</button>
 
@@ -160,7 +160,7 @@
                         <h3>${name}</h3>
                         <p>con Documento de Identidad: ${identity_document}</p>
                         <p>ha completado exitosamente</p>
-                        <p><strong>${time}</strong> horas de trabajo en</p>
+                        <p><strong>${time}</strong> tiempo de trabajo en</p>
                         <p><strong>${project}</strong></p>
                         <p>Fecha: 19 de abril de 2025</p>
                         <svg id="barcode-${index}"></svg>
